@@ -12,9 +12,14 @@ enableEmoji: true
 pygmentsUseClasses: true
 # googleAnalytics: UA-123-45
 
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
 minify:
     disableXML: true
     # minifyOutput: true
+
+
 
 languages:
     en:
@@ -40,16 +45,17 @@ languages:
                 - name: Discord
                   url: https://discord.gg/ahpmTvhVmp
 
-    fr:
+    it:
         languageName: ":it:"
-        languageAltTitle: French
         weight: 2
-        title: PaperModL2
         taxonomies:
-          category: FRcategories
-          tag: FRtags
-          series: FRseries
-        profileMode:
+          category: categorie
+          tag: tag
+          series: serie
+        title: PaperMod in Italiano
+        params:
+          languageAltTitle: Italian
+          profileMode:
             enabled: true
             title: PaperMod
             imageUrl: "https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f317.svg"
@@ -68,13 +74,10 @@ languages:
                   url: archives/
                   weight: 5
                 - name: FRTags
-                  url: frtags
+                  url: tag
                   weight: 10
-                - name: FRCategories
-                  url: frcategories
-                  weight: 10
-                - name: FRSeries
-                  url: frseries
+                - name: Categorie
+                  url: categorie
                   weight: 10
                 - name: NullLink
                   url: "#"
