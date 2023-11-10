@@ -56,8 +56,6 @@ languages:
     weight: 2
     taxonomies:
       category: categories
-      tag: tags
-      series: series
     menu:
         main:
             - name: Articles
@@ -65,7 +63,6 @@ languages:
               weight: 5
             - name: Search
               url: search
-              weight: 10
               weight: 10
             - name: WiKi
               url: https://github.com/adityatelange/hugo-PaperMod/wiki/

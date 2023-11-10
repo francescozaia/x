@@ -2,7 +2,7 @@
 author: "Francesco Zaia"
 title: "The Plan Is To Make You Permanently Poorer"
 date: 2023-11-09T16:36:00+01:00
-draft: true
+draft: false
 description: "Aaron Meets Gary Stevenson"
 tags: ["UK", "Economics"]
 ShowToc: true
