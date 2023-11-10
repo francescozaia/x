@@ -12,75 +12,66 @@ enableEmoji: true
 pygmentsUseClasses: true
 # googleAnalytics: UA-123-45
 
-defaultContentLanguage: en
+defaultContentLanguage: it
 defaultContentLanguageInSubdir: true
 
 minify:
-    disableXML: true
-    # minifyOutput: true
+  disableXML: true
+  minifyOutput: true
 
 
 
 languages:
-    en:
-        languageName: ":uk:"
-        weight: 1
-        taxonomies:
-          category: categories
-          tag: tags
-          series: series
-        menu:
-            main:
-                - name: Archive
-                  url: archives
-                  weight: 5
-                - name: Search
-                  url: search/
-                  weight: 10
-                - name: Tags
-                  url: tags/
-                  weight: 10
-                - name: WiKi
-                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/
-                - name: Discord
-                  url: https://discord.gg/ahpmTvhVmp
-
-    it:
-        languageName: ":it:"
-        weight: 2
-        taxonomies:
-          category: categorie
-          tag: tag
-          series: serie
-        title: PaperMod in Italiano
-        params:
-          languageAltTitle: Italian
-          profileMode:
-            enabled: true
-            title: PaperMod
-            imageUrl: "https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f317.svg"
-            imageTitle: ProfileMode image
-            # imageWidth: 120
-            # imageHeight: 120
-            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-            buttons:
-                - name: Blog
-                  url: posts
-                - name: Profile Mode
-                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
-        menu:
-            main:
-                - name: Archive
-                  url: archives/
-                  weight: 5
-                - name: FRTags
-                  url: tag
-                  weight: 10
-                - name: Categorie
-                  url: categorie
-                  weight: 10
-                - name: NullLink
-                  url: "#"
+  it:
+    languageName: ":it:"
+    weight: 1
+    taxonomies:
+      category: categorie
+    title: X
+    params:
+      languageAltTitle: Italian
+      profileMode:
+        enabled: true
+        title: X
+        imageUrl: "undraw_dream_world_re_x2yl.svg"
+        imageTitle: Dream world
+        imageWidth: 300
+        imageHeight: "auto"
+        subtitle: Un piccolo blog con lo scopo di tradurre e rendere accessibili i migliori video di [Novara Media](https://novaramedia.com/), elevando prospettive critiche che difficilmente troverete altrove. Il nostro giornalismo è sempre impegnato politicamente. Piuttosto che cercare di moderare tra le due parti di un dibattito, la nostra produzione intende contribuire attivamente all'azione politica.
+        buttons:
+            - name: Entra
+              url: articles
+    menu:
+        main:
+            - name: Articoli
+              url: articles
+              weight: 5
+            - name: Cerca
+              url: cerca
+              weight: 10
+            - name: NovaraMedia
+              url: "https://novaramedia.com/"
+  en:
+    languageName: ":uk:"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+        main:
+            - name: Articles
+              url: articles
+              weight: 5
+            - name: Search
+              url: search
+              weight: 10
+              weight: 10
+            - name: WiKi
+              url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+    params:
+      editPost:
+        Text: "Suggest Changes"
 outputs:
     home:
         - HTML
@@ -109,11 +100,7 @@ params:
 
     profileMode:
         enabled: false
-        title: PaperMod
-        imageUrl: "#"
-        imageTitle: my image
-        # imageWidth: 120
-        # imageHeight: 120
+        title: X
         buttons:
             - name: Archives
               url: archives
@@ -121,28 +108,20 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "Welcome to X"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
-
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-            - Do give a 🌟 on Github !
-
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+            A tiny blog that translates and shares the finest videos from [Novara Media](https://novaramedia.com/), promoting unique perspectives that are hard to come by.
 
     socialIcons:
         - name: github
-          url: "https://github.com/adityatelange/hugo-PaperMod"
-        - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
+          url: "https://github.com/francescozaia/x"
         - name: Rss
           url: "index.xml"
 
     editPost:
-        URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
-        Text: "Suggest Changes" # edit text
-        appendFilePath: true # to append file path to Edit link
+        URL: "https://github.com/francescozaia/x/tree/main"
+        Text: "Suggerisci modifiche"
+        appendFilePath: true
     
     # label:
     #     text: "Home"
@@ -154,12 +133,12 @@ params:
     #         SiteVerificationTag: "XYZabc"
 
     assets:
-        disableHLJS: true
-    #     favicon: "<link / abs url>"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
-    #     safari_pinned_tab: "<link / abs url>"
+      disableHLJS: true
+      favicon: "favicon.png"
+      favicon16x16: "favicon.png"
+      favicon32x32: "favicon.png"
+      apple_touch_icon: "favicon.png"
+      safari_pinned_tab: "favicon.png"
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data
@@ -178,8 +157,11 @@ params:
 
 markup:
     goldmark:
-        renderer:
-            unsafe: true
+      parser:
+        attribute:
+          block: true
+      renderer:
+        unsafe: true
     highlight:
         noClasses: false
         # anchorLineNos: true
