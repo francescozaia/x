@@ -83,7 +83,7 @@ params:
     description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
     author: Theme PaperMod
     # author: ["Me", "You"] # multiple authors
-
+    robotsNoIndex: true
     defaultTheme: auto
     # disableThemeToggle: true
     ShowShareButtons: true
