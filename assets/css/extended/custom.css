@@ -1,0 +1,7 @@
+.post-bio {
+    color: var(--secondary) !important;
+    font-size: small !important;
+}
+.profile img {
+    border-radius: 0 !important;
+}
