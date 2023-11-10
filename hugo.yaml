@@ -37,7 +37,7 @@ languages:
         imageTitle: Dream world
         imageWidth: 300
         imageHeight: "auto"
-        subtitle: Un piccolo blog con lo scopo di tradurre e rendere accessibili i migliori video di [Novara Media](https://novaramedia.com/), elevando prospettive critiche che difficilmente troverete altrove. Il nostro giornalismo è sempre impegnato politicamente. Piuttosto che cercare di moderare tra le due parti di un dibattito, la nostra produzione intende contribuire attivamente all'azione politica.
+        subtitle: Un piccolo blog con lo scopo di tradurre e rendere accessibili i migliori video di [Novara Media](https://novaramedia.com/), elevando prospettive critiche che difficilmente troverete altrove. Il giornalismo di Novara Media è sempre impegnato politicamente, piuttosto che cercare di moderare tra le due parti di un dibattito, la loro produzione intende contribuire attivamente all'azione politica.
         buttons:
             - name: Entra
               url: articles
